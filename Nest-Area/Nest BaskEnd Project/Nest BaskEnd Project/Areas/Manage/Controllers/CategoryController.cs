@@ -31,6 +31,25 @@ namespace Nest_BaskEnd_Project.Areas.Manage.Controllers
             await _context.SaveChangesAsync();
             return RedirectToAction(nameof(Index));
         }
+        public IActionResult Edit(int id )
+        {
+           Category categories = _context.Categories.FirstOrDefault(x => x.Id == id);
+            if (categories == null) return NotFound();
+            return View(categories);
+        }
+        [HttpPost]
+        [ValidateAntiForgeryToken]
+        public IActionResult Edit(Category category)
+        {
+            Category existcategory = _context.Categories.FirstOrDefault(x => x.Id == category.Id);
+            if (existcategory == null) return NotFound();
+            existcategory.Logo = category.Logo;
+            existcategory.Name = category.Name;
+            existcategory.Products = category.Products;
+            existcategory.IsDeleted = category.IsDeleted;
+            _context.SaveChanges();
+            return RedirectToAction(nameof(Index));
+        }
         public  IActionResult Delete(int id)
         {
             Category category = _context.Categories.Find(id);
