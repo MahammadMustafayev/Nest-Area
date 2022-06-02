@@ -450,3 +450,4 @@ C:\Users\tu7ekdm78\Desktop\Nest-Area\Nest-Area\Nest BaskEnd Project\Nest BaskEnd
 C:\Users\tu7ekdm78\Desktop\Nest-Area\Nest-Area\Nest BaskEnd Project\Nest BaskEnd Project\obj\Debug\netcoreapp3.1\Nest BaskEnd Project.dll
 C:\Users\tu7ekdm78\Desktop\Nest-Area\Nest-Area\Nest BaskEnd Project\Nest BaskEnd Project\obj\Debug\netcoreapp3.1\Nest BaskEnd Project.pdb
 C:\Users\tu7ekdm78\Desktop\Nest-Area\Nest-Area\Nest BaskEnd Project\Nest BaskEnd Project\obj\Debug\netcoreapp3.1\Nest BaskEnd Project.genruntimeconfig.cache
+C:\Users\tu7ekdm78\Desktop\Nest-Area\Nest-Area\Nest BaskEnd Project\Nest BaskEnd Project\obj\Debug\netcoreapp3.1\Razor\Areas\Manage\Views\Category\Edit.cshtml.g.cs

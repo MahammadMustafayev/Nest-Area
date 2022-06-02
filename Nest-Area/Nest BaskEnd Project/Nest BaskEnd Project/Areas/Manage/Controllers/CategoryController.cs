@@ -45,8 +45,6 @@ namespace Nest_BaskEnd_Project.Areas.Manage.Controllers
             if (existcategory == null) return NotFound();
             existcategory.Logo = category.Logo;
             existcategory.Name = category.Name;
-            existcategory.Products = category.Products;
-            existcategory.IsDeleted = category.IsDeleted;
             _context.SaveChanges();
             return RedirectToAction(nameof(Index));
         }

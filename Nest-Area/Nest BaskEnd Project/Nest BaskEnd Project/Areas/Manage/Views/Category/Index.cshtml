@@ -124,13 +124,13 @@
                                     <td><img src="~/assets/imgs/shop/@item.Logo" alt="Logo" /></td>
                                     <td><b>@item.Name</b></td>
                                     <td>@item.Products.Count</td>
-                                    <td>@(item.IsDeleted==true?"Deleted":"On Sale")</td>      
+                                    <td class="@(item.IsDeleted==true?"text-danger":"")">@(item.IsDeleted==true?"Deleted":"On Sale")</td>      
                                     <td class="text-end">
                                         <div class="dropdown">
                                             <a href="#" data-bs-toggle="dropdown" class="btn btn-light rounded btn-sm font-sm"> <i class="material-icons md-more_horiz"></i> </a>
                                             <div class="dropdown-menu">
-                                                <a class="dropdown-item" href="#">View detail</a>
-                                                <a class="dropdown-item" href="#">Edit info</a>
+                                                
+                                                <a class="dropdown-item" asp-controller="Category" asp-action="Edit" asp-route-id="@item.Id">Edit info</a>
                                                 <a class="dropdown-item " asp-controller="Category" asp-action="Repair" asp-route-id="@item.Id">Repair</a>
                                                 <a class="dropdown-item text-danger" asp-controller="Category" asp-action="Delete" asp-route-id="@item.Id">Delete</a>
                                                 <a class="dropdown-item text-danger" asp-controller="Category" asp-action="PermaDelete" asp-route-id="@item.Id">Perma-Delete</a>

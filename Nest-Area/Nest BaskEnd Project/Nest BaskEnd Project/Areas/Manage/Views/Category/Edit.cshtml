@@ -1,0 +1,24 @@
+﻿@model Category
+@{
+    ViewData["Title"] = "Edit";
+    Layout = "~/Areas/Manage/Views/Shared/_ManageLayout.cshtml";
+}
+
+<div class="row">
+    <div class="col-md-3">
+        <form method="post" asp-action="Edit">
+            <div class="mb-4">
+                <label asp-for="Name" class="form-label">Name</label>
+                <input asp-for="Name" placeholder="Type here" class="form-control" />
+            </div>
+            <div class="mb-4">
+                <label asp-for="Logo" class="form-label">Logo</label>
+                <input type="text" asp-for="Logo" placeholder="Type here" class="form-control" id="Logo" />
+            </div>
+            <div class="d-grid">
+                <button class="btn btn-primary">Edit category</button>
+            </div>
+        </form>
+    </div>
+</div>
+
